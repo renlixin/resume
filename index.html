@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_485272_8nn3b0dhhpno2yb9.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet/less" href="./css/index.less">
+    <script src="js/less-2.5.3.min.js"></script>
+    <script>
+        ~function () {
+            window.addEventListener('resize', computed, false);
+            computed();
+            function computed() {
+                var deviceW = document.documentElement.clientWidth;
+                if (deviceW > 750) return;
+                document.documentElement.style.fontSize = deviceW / 750 * 100 + 'px';
+            }
+        }();
+    </script>
+</head>
+<body>
+<section class="container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide one" >
+            <img src="./img/1.gif" alt="">
+            <div class="box"></div>
+            <div class="resume">
+                <span>求职</span>
+                <span>简历</span>
+            </div>
+            <div class="pencil">
+                <img src="./img/2.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide two" >
+            <div class="pic">
+                <div class="pic_1">
+                    <img src="./img/2.png" alt="">
+                </div>
+            </div>
+            <div class="name">
+                <h3>任立欣</h3>
+                <p>应聘职位：前端工程师</p>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./img/3.png" alt="">
+                        </div>
+                        <span>学历：本科</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/4.png" alt="">
+                        </div>
+                        <span>专业：计算机</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/5.png" alt="">
+                        </div>
+                        <span>爱好：打篮球</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/6.png" alt="">
+                        </div>
+                        <span>户籍：河北省</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/7.png" alt="">
+                        </div>
+                        <span>出生日期：1993-09</span>
+                    </li>
+                </ul>
+                <div class="tree1">
+                    <img src="./img/9.png" alt="">
+                </div>
+                <div class="tree2">
+                    <img src="./img/8.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide three" >
+            <img src="./img/10.png" alt="">
+            <i class="iconfont icon-biaoqian1 biaoqian"></i>
+            <p class="work">工作经历</p>
+            <div class="time1">
+                <i class="iconfont icon-up"></i>
+                <span>2016</span>
+                <p class="texeOne">中艺神州科技公司</p>
+                <p class="texeTwo">web前端工程师</p>
+                <p class="texeThr">实现网站功能</p>
+            </div>
+            <div class="time2">
+                <i class="iconfont icon-up"></i>
+                <span>2017</span>
+                <p>泰德网聚(北京)科技有效公司，职位：前端工程师</p>
+            </div>
+            <div class="time3">
+                <i class="iconfont icon-arrRight-fill"></i>
+                <span>2017</span>
+                <p>正在努力找工作中，希望加入贵公司~~~</p>
+            </div>
+        </div>
+        <div class="swiper-slide four" >
+            <p class="skill">工作技能</p>
+            <ul>
+                <li>
+                    <img src="./img/skill1.png" alt="">
+                    <span>移动端App开发</span>
+                </li>
+                <li>
+                    <img src="./img/skill2.png" alt="">
+                    <span>微信公众号</span>
+                </li>
+                <li>
+                    <img src="./img/skill3.png" alt="">
+                    <span>H5+CSS3应用</span>
+                </li>
+                <li>
+                    <img src="./img/skill4.png" alt="">
+                    <span>原生JS</span>
+                </li>
+                <li>
+                    <img src="./img/skill5.png" alt="">
+                    <span>vue、react</span>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-slide fix" >
+            <p>联系方式</p>
+            <img src="./img/weixin.png" alt="">
+            <div class="span">
+                <span>Phone:17716579545</span>
+                <span>Email:1060754972@qq.com</span>
+                <span>WeChat:1wwersfdsf</span>
+            </div>
+        </div>
+    </div>
+    <div class="bg audioMove" id="bg">
+        <audio src="./audio/You%20Raise%20Me%20Up.mp3" id="mp3" autoplay></audio>
+    </div>
+</section>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    var step=0;
+    change();
+    var swp = new Swiper(".container", {
+        direction: 'vertical',
+        onSlidePrevEnd: function () {
+            step--;
+            change();
+        },
+        onSlideNextEnd: function () {
+            step++;
+            change();
+        }
+    });
+    function change() {
+        divList = document.querySelectorAll(".swiper-slide");
+        [].forEach.call(divList, function (curDiv, index) {
+            curDiv.id = index === step ? `page${index+1}` : null;
+        });
+    }
+    var bg=document.getElementById("bg");
+    var mp3=document.getElementById('mp3')
+    bg.onclick=function () {
+        if(this.className=='bg'){
+            this.className='bg audioMove';
+            mp3.play();
+        }else{
+            this.className='bg';
+            mp3.pause();
+        }
+    }
+</script>
+</body>
+</html>

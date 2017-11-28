@@ -1,0 +1,685 @@
+*{margin:0;padding:0;}
+ul,li{list-style: none;}
+html,body{width:100%;height:100%;overflow: hidden;}
+.container{
+  width:100%;
+  height:100%;
+  .swiper-wrapper{
+    width:100%;
+    height:100%;
+  }
+  div{
+    width:100%;
+    height:100%;
+  }
+}
+
+.one{
+  position: relative;
+  background: #5294bd !important;
+  img{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:4.5rem;
+  }
+  .box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:4rem;
+    height:4rem;
+    margin:-4rem 0 0 -2rem;
+    border:.2rem solid #fff;
+    background: #5294bd;
+    opacity: 0;
+    /*animation:bounceInLeft 1s both;*/
+  }
+  .resume{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:4rem;
+    height:4rem;
+    margin:-3.8rem 0 0 -1.8rem;
+    background: #5294bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    opacity: 0;
+    /*animation:bounceInRight 2.5s both;*/
+  }
+  .pencil{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:1.5rem;
+    height:1.5rem;
+    margin:-1.1rem 0 0 1.1rem;
+    background: transparent;
+    opacity: 0;
+    /*animation:zoomIn 1s  2.6s both;*/
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+}
+#page1 .box{animation:bounceInLeft 1s both;opacity: 1}
+#page1 .resume{animation:bounceInRight 2.5s both;opacity: 1}
+#page1 .pencil{animation:zoomIn 1s  2.6s both;opacity: 1}
+
+
+.two{
+  position: relative;
+  .pic{
+    width:100%;
+    height:20%;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 0;
+    .pic_1{
+      display: inline-block;
+      width:2rem;
+      height:2rem;
+      margin-top:.2rem;
+      border-radius: 50%;
+      opacity: 0;;
+      /*animation:zoomIn 1s both;*/
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+  .name{
+    width:100%;
+    height:25%;
+    overflow: hidden;
+    h3{
+      text-align: center;
+      font-size: .8rem;
+      color:lightblue;
+      line-height: 200%;
+      opacity: 0;
+      /*animation:rotateInUpRight 1s .7s both;*/
+    }
+    p{
+      text-align: center;
+      font-size: .5rem;
+      line-height: 200%;
+      opacity: 0;
+      /*animation:rotateInUpRight 1s 1.2s both;*/
+    }
+  }
+  .info{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:55%;
+    ul{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      height:100%;
+      background: #a3c87a;
+      overflow: hidden;
+      clear: both;
+      li{
+        overflow: hidden;
+        height:20%;
+        line-height: 145%;
+        div{
+          float: left;
+          background: #a3c87a;
+          height:100%;
+          width:20%;
+          text-align: center;
+          img{
+            width:40px;
+            height:40px;
+            opacity: 0;
+          }
+        }
+        span{
+          opacity: 0;
+          height:100%;
+          width:80%;
+          float: left;
+          text-align: left;
+          color:#fff;
+          font-size: .5rem;
+        }
+      }
+    }
+    .tree1{
+      position: absolute;
+      bottom:100%;
+      left:0;
+      width:50%;
+      height:1.3rem;
+      padding: 0 .5rem;
+      box-sizing: border-box;
+      background: transparent;
+      opacity: 0;
+      /*animation:fadeInUpBig 1.5s 1.5s both;*/
+      img{
+        height:100%;
+      }
+    }
+    .tree2{
+      position: absolute;
+      bottom:100%;
+      right:0;
+      width:50%;
+      height:.8rem;
+      line-height: .8rem;
+      padding: 0 .5rem;
+      box-sizing: border-box;
+      text-align: right;
+      background: transparent;
+      opacity: 0;
+      /*animation:fadeInUpBig 1.5s 1.5s both;*/
+      img{height:100%;}
+    }
+  }
+}
+#page2 .pic .pic_1{
+  opacity: 1;
+  animation:zoomIn 1s both;
+}
+#page2 .name h3{
+  opacity: 1;
+  animation:rotateInUpRight 1s .7s both;
+}
+#page2 .name p{
+  opacity: 1;
+  animation:rotateInUpRight 1s 1.2s both;
+}
+#page2 .name p{
+  opacity: 1;
+  animation:rotateInUpRight 1s 1.2s both;
+}
+#page2 .info ul li:nth-child(1){
+  div{
+    img{
+      opacity: 1;
+      animation:zoomIn 1s 2.5s both;
+    }
+  }
+  span{
+    opacity: 1;
+    animation:bounceInRight 1s 2.8s both;
+  }
+}
+#page2 .info ul li:nth-child(2){
+  div{
+    img{
+      opacity: 1;
+      animation:zoomIn 1s 3.1s both;
+    }
+  }
+  span{
+    opacity: 1;
+    animation:bounceInRight 1s 3.4s both;
+  }
+}
+#page2 .info ul li:nth-child(3){
+  div{
+    img{
+      opacity:1;
+      animation:zoomIn 1s 3.7s both;
+    }
+  }
+  span{
+    opacity: 1;
+    animation:bounceInRight 1s 4s both;
+  }
+}
+#page2 .info ul li:nth-child(4){
+  div{
+    img{
+      opacity:1;
+      animation:zoomIn 1s 4.3s both;
+    }
+  }
+  span{
+    opacity: 1;
+    animation:bounceInRight 1s 4.6s both;
+  }
+}
+#page2 .info ul li:nth-child(5){
+  div{
+    img{
+      opacity: 1;
+      animation:zoomIn 1s 4.9s both;
+    }
+  }
+  span{
+    opacity: 1;
+    animation:bounceInRight 1s 5.2s both;
+  }
+}
+#page2 .info .tree1{
+  opacity: 1;
+  animation:fadeInUpBig 1.5s 1.5s both;
+}
+#page2 .info .tree2{
+  opacity: 1;
+  animation:fadeInUpBig 1.5s 1.5s both;
+}
+
+
+.three{
+  position: relative;
+  top:0;
+  left:0;
+  img{
+    width: 90%;
+    height: 120%;
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+  .biaoqian{
+    position: absolute;
+    top:0.2rem;
+    left:.3rem;
+    font-size:1.3rem;
+    color:rgba(200, 8, 8, 0.8);
+    opacity: 0;
+    /*animation: zoomInLeft 2s both;*/
+  }
+  .work{
+    width:3.1rem;
+    height:1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    position: absolute;
+    top:.2rem;
+    left:.3rem;
+    font-size:.7rem;
+    color:#fff;
+  }
+  .time1{
+    i{
+      position: absolute;
+      top:34%;
+      left:47%;
+      font-size: .6rem;
+      opacity: 0;
+      /*animation: bounceInUp 1s 1.8s both;*/
+    }
+    span{
+      position: absolute;
+      top:28%;
+      left:44.5%;
+      font-size: .4rem;
+      font-weight: bold;
+      opacity: 0;
+      /*animation: zoomIn .5s 1.5s both;*/
+    }
+    .texeOne{
+      position: absolute;
+      top:39%;
+      left:33.5%;
+      font-size: .4rem;
+      opacity: 0;
+      /*animation: zoomInUp 2s 1.8s both;*/
+    }
+    .texeTwo{
+      position: absolute;
+      top:44%;
+      left:40%;
+      font-size: .4rem;
+      opacity: 0;
+      /*animation: zoomInUp 2s 1.8s both;*/
+    }
+    .texeThr{
+      position: absolute;
+      top:49%;
+      left:50%;
+      font-size: .4rem;
+      opacity: 0;
+      /*animation: zoomInUp 2s 1.8s both;*/
+    }
+  }
+  .time2{
+    i{
+      position: absolute;
+      top:70%;
+      left:85%;
+      font-size: .6rem;
+      opacity: 0;
+      /*animation: bounceInUp 1s 3.6s both;*/
+    }
+    span{
+      position: absolute;
+      top:46.5%;
+      left:83.5%;
+      font-size: .4rem;
+      font-weight: bold;
+      opacity: 0;
+     /* animation: zoomIn .5s 3.3s both;*/
+    }
+    p{
+      position: absolute;
+      bottom:0.4rem;
+      right:.006rem;
+      width:2.7rem;
+      height:3rem;
+      font-size: .4rem;
+      line-height: 150%;
+      overflow: hidden;
+      opacity: 0;
+      /*animation: zoomInUp 2s 3.6s both;*/
+    }
+  }
+  .time3{
+    i{
+      position: absolute;
+      top:79%;
+      left:30%;
+      font-size: .8rem;
+      opacity: 0;
+      /*animation: fadeInLeftBig 1s 5s both;*/
+    }
+    span{
+      position: absolute;
+      top:80.5%;
+      left:43.5%;
+      font-size: .4rem;
+      font-weight: bold;
+      opacity: 0;
+      /*animation: zoomIn .5s 4.9s both;*/
+    }
+    p{
+      position: absolute;
+      bottom:1rem;
+      left:.35rem;
+      width:2rem;
+      height:3rem;
+      font-size: .4rem;
+      line-height: 150%;
+      overflow: hidden;
+      opacity: 0;
+      /*animation: zoomInUp 2s 5s both;*/
+    }
+  }
+}
+#page3 .biaoqian{
+  animation: zoomInLeft 2s both;
+  opacity: 1;
+}
+#page3 .time1 i{
+  animation: bounceInUp 1s 1.8s both;
+  opacity: 1;
+}
+#page3 .time1 span{
+  animation: zoomIn .5s 1.5s both;
+  opacity: 1;
+}
+#page3 .time1 p{
+  animation: zoomInUp 2s 1.8s both;
+  opacity: 1;
+}
+#page3 .time2 i{
+  animation: bounceInUp 1s 3.6s both;
+  opacity: 1;
+}
+#page3 .time2 span{
+  animation: zoomIn .5s 3.3s both;
+  opacity: 1;
+}
+#page3 .time2 p{
+  animation: zoomInUp 2s 3.6s both;
+  opacity: 1;
+}
+#page3 .time3 i{
+  animation: fadeInLeftBig 1s 5s both;
+  opacity: 1;
+}
+#page3 .time3 span{
+  animation: zoomIn .5s 4.9s both;
+  opacity: 1;
+}
+#page3 .time3 p{
+  animation: zoomInUp 2s 5s both;
+  opacity: 1;
+}
+
+
+.four{
+  position: relative;
+  background: #fdd132;
+  background: -webkit-linear-gradient(top left,green,lightgoldenrodyellow,lightgreen,lightpink);
+  background: linear-gradient(top left,green,lightgoldenrodyellow,lightgreen,lightpink);
+
+  .skill{
+    position: absolute;
+    top:5%;
+    left:50%;
+    margin-left:-2.5rem;
+    width:5rem;
+    height:1.5rem;
+    line-height: 1.5rem;
+    border:1px dashed lightseagreen;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: .7rem;
+    color:#fff;
+    font-weight: bold;
+    opacity: 0;
+    /*animation: bounceInDown 1s both;*/
+  }
+  ul{
+    position: absolute;
+    top:20%;
+    width:100%;
+    height:9rem;
+    li{
+      width:100%;
+      height:1.8rem;
+      line-height: 1.8rem;
+      font-size: 0px;
+      padding:0 .3rem 0;
+      box-sizing: border-box;
+      img{
+        float: left;
+        padding-top:.25rem;
+        margin-right:.5rem;
+        box-sizing: border-box;
+        width:20%;
+        opacity: 0;
+        /*animation: bounceInLeft 1s .2s both;*/
+      }
+      span{
+        float: left;
+        width:60%;
+        font-size:.4rem;
+        opacity: 0;
+        /*animation: bounceInRight 1s .5s both;*/
+      }
+    }
+  }
+}
+#page4 .skill{
+  opacity: 1;
+  animation: bounceInDown 1s both;
+}
+#page4 ul li:nth-child(1){
+  img{
+    opacity: 1;
+    animation: bounceInLeft 1s .3s both;
+  }
+  span{
+    opacity: 1;
+    animation: bounceInRight 1s .6s both;
+  }
+}
+#page4 ul li:nth-child(2){
+  img{
+    opacity: 1;
+    animation: bounceInLeft 1s .9s both;
+  }
+  span{
+    opacity: 1;
+    animation: bounceInRight 1s 1.2s both;
+  }
+}
+#page4 ul li:nth-child(3){
+  img{
+    opacity: 1;
+    animation: bounceInLeft 1s 1.5s both;
+  }
+  span{
+    opacity: 1;
+    animation: bounceInRight 1s 1.8s both;
+  }
+}
+#page4 ul li:nth-child(4){
+  img{
+    opacity: 1;
+    animation: bounceInLeft 1s 2.1s both;
+  }
+  span{
+    opacity: 1;
+    animation: bounceInRight 1s 2.4s both;
+  }
+}
+#page4 ul li:nth-child(5){
+  img{
+    opacity: 1;
+    animation: bounceInLeft 1s 2.7s both;
+  }
+  span{
+    opacity: 1;
+    animation: bounceInRight 1s 3s both;
+  }
+}
+
+
+.fix{
+  position: relative;
+  background: -webkit-linear-gradient(top left,lightgreen,salmon,lawngreen,cornflowerblue);
+  background: linear-gradient(top left, lightgreen,salmon,lawngreen,cornflowerblue);
+  p{
+    position: absolute;
+    top:5%;
+    left:50%;
+    margin-left:-2.5rem;
+    width:5rem;
+    height:1.5rem;
+    line-height: 1.5rem;
+    border:1px dashed lightseagreen;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: .7rem;
+    color:#fff;
+    font-weight: bold;
+    opacity: 0;
+  }
+  img{
+    position: absolute;
+    top:28%;
+    left:50%;
+    margin-left:-1.5rem;
+    width:3rem;
+    height:3rem;
+    opacity: 0;
+  }
+  .span{
+    span:nth-child(1){
+       display: block;
+       position: absolute;
+       top:60%;
+       left:50%;
+       margin-left:-30%;
+       width:60%;
+       font-size: .4rem;
+       opacity: 0;
+     }
+    span:nth-child(2){
+      display: block;
+      position: absolute;
+      top:70%;
+      left:50%;
+      margin-left:-30%;
+      width:60%;
+      font-size: .4rem;
+      opacity: 0;
+    }
+    span:nth-child(3){
+      display: block;
+      position: absolute;
+      top:80%;
+      left:50%;
+      margin-left:-30%;
+      width:60%;
+      font-size: .4rem;
+      opacity: 0;
+    }
+  }
+}
+#page5 p{
+  opacity: 1;
+  animation: lightSpeedIn 1s both;
+}
+#page5 img{
+  opacity: 1;
+  animation: zoomIn 1s .3s both;
+}
+#page5 .span span:nth-child(1){
+
+  animation: fadeInUp 1s 1s both;
+  opacity: 1;
+}
+#page5 .span span:nth-child(2){
+  opacity: 1;
+  animation: fadeInUp 1s 1.6s both;
+}
+#page5 .span span:nth-child(3){
+  opacity: 1;
+  animation: fadeInUp 1s 2.2s both;
+}
+
+
+.container .bg{
+  position: absolute;
+  top:20px;
+  right:20px;
+  width:40px;
+  height:40px;
+  background: url("../img/music.svg") no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+.audioMove {
+  -webkit-animation: audioMove 1s linear infinite both;
+  animation: audioMove 1s linear infinite both;
+}
+@-webkit-keyframes audioMove {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes audioMove {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
